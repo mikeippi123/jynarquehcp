@@ -16,7 +16,7 @@
 
 }
 
-.cards .button.primary {
+.cards .button-container > a.button:any-link {
   margin: 18px 0 24px;
   box-sizing: border-box;
   background-color: #2B2C2B;
@@ -57,10 +57,10 @@
 
 .cards > ul > li:first-child .cards-card-image{
   position: relative;
-  bottom: 0px; 
-  left: 150px; 
-  width: 250px;
-  height: 250px;
+  bottom: 100px; 
+  left: 200px; 
+  width: 200px;
+  height: 200px;
  }
 
 .cards > ul > li:nth-child(2) {
@@ -73,10 +73,10 @@
 
 .cards > ul > li:nth-child(2) .cards-card-image{
   position: relative;
-  bottom: 0px; 
-  left: 150px; 
-  width: 350px;
-  height: 250px;
+  bottom: 100px; 
+  left: 200px; 
+  width: 300px;
+  height: 200px;
  }
 
 .cards > ul > li:nth-child(3) {
@@ -92,7 +92,7 @@
 
 .cards > ul > li:nth-child(3) .cards-card-image{
   position: relative;
-  bottom: 51px; /* Move the element 20px down */
+  bottom: 170px; /* Move the element 20px down */
   left: 251px; /* Move the element 30px to the right */
   width: 300px;
   height: 300px;
@@ -109,7 +109,7 @@
 
 .cards > ul > li:nth-child(4) .cards-card-image{
   position: relative;
-  bottom: 20px; /* Move the element 20px down */
+  bottom: 141px; /* Move the element 20px down */
   left: 195px; /* Move the element 30px to the right */
   width: 250px;
   height: 250px;
