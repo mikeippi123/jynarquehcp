@@ -1,27 +1,121 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  grid-gap: 24px;
+.cards-wraper{
+  max-width: 1162px;
 }
+.cards > ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none; 
+  margin: 0;
+    padding: 20px 0 12px;
+}
+
+.cards .cards-card-body {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2b2c2b;
+
+}
+
+.cards .button.primary {
+  margin: 18px 0 24px;
+  box-sizing: border-box;
+  background-color: #2B2C2B;
+  border: 1px solid #2B2C2B;
+  border-radius: 4px;
+  color: #f8f8f8;
+  min-width: 135px;
+  max-width: 160px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 27px 10px 22px; 
+}
+
+.cards .two-per-row li {
+  box-sizing: border-box; 
+  
+}
+
+
 
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  border: 1px solid #2B2C2B;
+  padding: 5px;
+
 }
+.cards > ul > li:first-child {
+  padding-left: 47px;
+  padding-right: 15px;
+  width: 41%;
+  height: 350px;
+  margin-right: 4%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+}
+
+.cards > ul > li:first-child .cards-card-image{
+  position: relative;
+  bottom: 0px; 
+  left: 150px; 
+  width: 250px;
+  height: 250px;
+ }
+
+.cards > ul > li:nth-child(2) {
+  width: 50%;
+  height: 350px;
+  padding-right: 15px;
+  padding-left: 47px;
+  margin-right: 2%;
+}
+
+.cards > ul > li:nth-child(2) .cards-card-image{
+  position: relative;
+  bottom: 0px; 
+  left: 150px; 
+  width: 350px;
+  height: 250px;
+ }
+
+.cards > ul > li:nth-child(3) {
+  width: 50%;
+  margin-right: 4%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+  height: 350px;
+  padding-right: 15px;
+  padding-left: 47px;
+
+}
+
+.cards > ul > li:nth-child(3) .cards-card-image{
+  position: relative;
+  bottom: 51px; /* Move the element 20px down */
+  left: 251px; /* Move the element 30px to the right */
+  width: 300px;
+  height: 300px;
+ }
+
+.cards > ul > li:nth-child(4) {
+  padding-left: 47px;
+  padding-right: 15px;
+  width: 41%;
+  height: 350px;
+  margin-right: 2%;
+  background-color: #cfe1ff;
+}
+
+.cards > ul > li:nth-child(4) .cards-card-image{
+  position: relative;
+  bottom: 20px; /* Move the element 20px down */
+  left: 195px; /* Move the element 30px to the right */
+  width: 250px;
+  height: 250px;
+
+ }
 
 .cards .cards-card-body {
   margin: 16px;
-}
-
-.cards .cards-card-image {
-  line-height: 0;
-}
-
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
 }
