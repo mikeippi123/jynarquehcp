@@ -309,11 +309,11 @@ main .section.highlight {
   text-wrap-mode: nowrap;
 }
 /*first button */
-.section:nth-child(5) > div > p:nth-child(4) > a {
+.section:nth-child(5) > div > p:nth-child(4) > .button {
   background-color: rgb(115, 150, 206);
   position: relative;
-  bottom: 0px; 
-  right: 75px;
+  top: 20px; 
+  right: 375px;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
@@ -331,11 +331,11 @@ main .section.highlight {
 }
 
 /*second button */
-.section:nth-child(5) > div > p:nth-child(5) > a {
+.section:nth-child(5) > div > p:nth-child(5) > .button {
   background-color:  rgb(115, 150, 206);
   position: relative;
-  bottom: 57px; 
-  left: 75px;
+  bottom: 35px; 
+  right: 200px;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
