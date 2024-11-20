@@ -1,12 +1,21 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--background-color);
+  font-size: var(--legal-font-size);
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
 }
 
 footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+      padding-bottom: 20px;
+      position: relative;
+      overflow-x: hidden;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      color: #565a5c;
+
 }
 
 footer .footer p {
