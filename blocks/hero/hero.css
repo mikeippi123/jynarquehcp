@@ -58,17 +58,28 @@
   margin-bottom: 24px;
 }
 
- .button-container > a.button:any-link{
-  max-width: 135.400px;
-  min-height: 24px;
+.hero.block .button-container .button{
+  max-width: 176.400px;
+  min-height: 58px;
   width: 100%;
   margin: 30px 0 0;
-  background: #f8f8f8;
-  border-radius: 5px;
-  border: 1px solid #f8f8f8;
-  color: #2c3a61;
+  color: rgb(44, 58, 97);
+  background-color: rgb(247, 247, 248);
+  border: rgb(247, 247, 248);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 24px;
-  padding: 10px 10px 10px 10px;
+  padding: 20px 16px 16px 23px;
+  text-align: left;
 }
+
+.hero.block .button-container .button:hover{
+  background-color:  rgb(115, 150, 206);
+  color: rgb(255, 255, 255);
+  border-color: rgb(115, 150, 206);;
+  cursor:pointer;
+
+}
+

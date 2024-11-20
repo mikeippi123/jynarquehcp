@@ -16,7 +16,7 @@
 
 }
 
-.cards .button-container > a.button:any-link {
+.cards .button-container .button {
   margin: 18px 0 24px;
   box-sizing: border-box;
   background-color: #2B2C2B;
@@ -28,7 +28,17 @@
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
-  padding: 10px 27px 10px 22px; 
+  padding: 10px 27px 10px 22px;
+  cursor: pointer; 
+}
+
+
+.cards .button-container .button:hover {
+
+  background-color: #ffffff;
+  border: 1px solid #2B2C2B;
+  color: #000000;
+  cursor: pointer;
 }
 
 .cards .two-per-row li {
@@ -58,10 +68,27 @@
 .cards > ul > li:first-child .cards-card-image{
   position: relative;
   bottom: 100px; 
-  left: 200px; 
-  width: 200px;
-  height: 200px;
+  left: 175px; 
+  width: 235px;
+  height: 225px;
  }
+
+ /*text box*/
+ .cards > ul > li:nth-child(1) > .cards-card-body{
+  height: 69.969px;
+  width: 170px;
+}
+/*text within box*/
+.cards > ul > li:nth-child(1) > .cards-card-body:first-child > p:first-child{
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 34.9992px;
+  color: rgb(43, 44, 43);
+}
 
 .cards > ul > li:nth-child(2) {
   width: 50%;
@@ -73,11 +100,28 @@
 
 .cards > ul > li:nth-child(2) .cards-card-image{
   position: relative;
-  bottom: 100px; 
+  bottom: 50px; 
   left: 200px; 
   width: 300px;
   height: 200px;
  }
+
+ /*text box*/
+.cards > ul > li:nth-child(2) > .cards-card-body{
+  height: 69.969px;
+  width: 400px;
+}
+/*text within box*/
+.cards > ul > li:nth-child(2) > .cards-card-body:first-child > p:first-child{
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 34.9992px;
+  color: rgb(43, 44, 43);
+}
 
 .cards > ul > li:nth-child(3) {
   width: 50%;
@@ -92,11 +136,26 @@
 
 .cards > ul > li:nth-child(3) .cards-card-image{
   position: relative;
-  bottom: 170px; /* Move the element 20px down */
-  left: 251px; /* Move the element 30px to the right */
+  bottom: 240px; 
+  left: 251px;
   width: 300px;
   height: 300px;
  }
+/*text box*/
+.cards > ul > li:nth-child(3) > .cards-card-body{
+  height: 104.953px;
+  width: 205px;
+}
+/*text within box*/
+.cards > ul > li:nth-child(3) > .cards-card-body:first-child > p:first-child{
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.9992px;
+  color: rgb(43, 44, 43);
+}
 
 .cards > ul > li:nth-child(4) {
   padding-left: 47px;
@@ -109,13 +168,36 @@
 
 .cards > ul > li:nth-child(4) .cards-card-image{
   position: relative;
-  bottom: 141px; /* Move the element 20px down */
-  left: 195px; /* Move the element 30px to the right */
-  width: 250px;
+  bottom: 159px; 
+  left: 146px;
+  width: 300px;
   height: 250px;
 
  }
 
+ .cards > ul > li:nth-child(4) > .cards-card-body{
+  height: 85px;
+  width: 200px;
+ }
+
+ .cards > ul > li:nth-child(4) > .cards-card-body:first-child > p:first-child{
+  color: #2c3a61;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 16px;
+  line-height: 16px;
+  text-align: left;
+ }
+ .cards > ul > li:nth-child(4) > .cards-card-body:first-child > p:nth-child(2){
+  color: #2c3a61;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.9992px;
+ }
 .cards .cards-card-body {
   margin: 16px;
 }
