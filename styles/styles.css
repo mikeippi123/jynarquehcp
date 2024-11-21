@@ -313,7 +313,7 @@ main .section.highlight {
   background-color: rgb(115, 150, 206);
   position: relative;
   top: 20px; 
-  right: 375px;
+  right: 100px;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
@@ -334,8 +334,8 @@ main .section.highlight {
 .section:nth-child(5) > div > p:nth-child(5) > .button {
   background-color:  rgb(115, 150, 206);
   position: relative;
-  bottom: 35px; 
-  right: 200px;
+  bottom: 38px; 
+  left: 50px;
   color: white;
   cursor: pointer;
   font-family: "Open Sans", sans-serif;
