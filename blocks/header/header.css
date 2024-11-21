@@ -2,13 +2,40 @@
 header .top-header-section{
   background-color: #2c3a61;
   height: 40px;
-  
+  width: 100%;
+  position: fixed;
+  z-index: 2;
 }
 
 header .top-header-section .inner-header-container {
   display: flex;
   width: 100%;
   flex-wrap: wrap;  
+}
+
+header .top-header-section .inner-header-container .header-top-left-row {
+  font-size: 11px;
+  color: white;
+  padding-top: 10px;
+}
+
+header .top-header-section .inner-header-container .header-top-right-row .content > p > a{
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 500px;
+}
+header .header-top .header-top-right .utility-navigation{
+  position: absolute;
+  right: 100px;
+   
+}
+header .top-header-section .inner-header-container .header-top-right-row > ul {
+  font-size: 11px;
+  color: white;
+  position: absolute;
+  align-items: inline;
 }
 
 @media (min-width: 1320px) {
@@ -112,6 +139,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  top: 40px;
 }
 
 a.button:any-link, button{

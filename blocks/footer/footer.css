@@ -10,7 +10,7 @@ footer .footer > div {
       padding-bottom: 20px;
       position: relative;
       overflow-x: hidden;
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: "Open Sans", sans-serif;
       font-weight: 400;
       font-size: 1.2rem;
       line-height: 1.6rem;
@@ -30,7 +30,8 @@ footer .footer p {
 
 .footer-wrapper .footer.block .section{
   margin-left: 125px;
-  height: 250px
+  height: 250px;
+  margin-right: 300px;
 }
 
 
