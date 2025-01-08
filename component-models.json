@@ -367,116 +367,94 @@
     ]
   },
   {
-    "component": {
-      "name": "carousel",
-      "description": "A carousel component for displaying slides with navigation controls.",
-      "properties": {
-        "id": {
-          "type": "string",
-          "description": "The unique identifier for the carousel."
-        },
-        "activeSlide": {
-          "type": "number",
-          "description": "The index of the currently active slide.",
-          "default": 0
-        },
-        "isSingleSlide": {
-          "type": "boolean",
-          "description": "Indicates if the carousel contains only a single slide.",
-          "default": false
-        },
-        "placeholders": {
-          "type": "object",
-          "description": "Placeholders for various text elements in the carousel.",
-          "properties": {
-            "carousel": {
-              "type": "string",
-              "description": "Placeholder text for the carousel role description.",
-              "default": "Carousel"
-            },
-            "carouselSlideControls": {
-              "type": "string",
-              "description": "Placeholder text for the carousel slide controls.",
-              "default": "Carousel Slide Controls"
-            },
-            "previousSlide": {
-              "type": "string",
-              "description": "Placeholder text for the previous slide button.",
-              "default": "Previous Slide"
-            },
-            "nextSlide": {
-              "type": "string",
-              "description": "Placeholder text for the next slide button.",
-              "default": "Next Slide"
-            },
-            "showSlide": {
-              "type": "string",
-              "description": "Placeholder text for the show slide button.",
-              "default": "Show Slide"
-            },
-            "of": {
-              "type": "string",
-              "description": "Placeholder text for the 'of' word in slide indicators.",
-              "default": "of"
-            }
-          }
-        }
+    "id": "carousel",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "previcon",
+        "value": "",
+        "label": "Previous Icon"
       },
-      "events": {
-        "updateActiveSlide": {
-          "description": "Event triggered when the active slide is updated.",
-          "parameters": {
-            "slideIndex": {
-              "type": "number",
-              "description": "The index of the newly active slide."
-            }
-          }
-        },
-        "showSlide": {
-          "description": "Event triggered to show a specific slide.",
-          "parameters": {
-            "slideIndex": {
-              "type": "number",
-              "description": "The index of the slide to be shown."
-            }
-          }
-        },
-        "bindEvents": {
-          "description": "Event triggered to bind event listeners to the carousel controls."
-        }
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "nexticon",
+        "value": "",
+        "label": "Next Icon"
       },
-      "methods": {
-        "createSlide": {
-          "description": "Method to create a new slide element.",
-          "parameters": {
-            "row": {
-              "type": "object",
-              "description": "The row element containing the slide content."
-            },
-            "slideIndex": {
-              "type": "number",
-              "description": "The index of the slide being created."
-            },
-            "carouselId": {
-              "type": "string",
-              "description": "The unique identifier for the carousel."
-            }
+      {
+        "component": "select",
+        "name": "carouselshowtype",
+        "value": "primary",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "primary",
+            "value": "primary"
           },
-          "returns": {
-            "type": "object",
-            "description": "The created slide element."
+          {
+            "name": "secondary",
+            "value": "secondary"
           }
-        },
-        "decorate": {
-          "description": "Method to initialize and decorate the carousel component.",
-          "parameters": {
-            "block": {
-              "type": "object",
-              "description": "The block element representing the carousel."
-            }
+        ]
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "linkTitle",
+        "label": "Title"
+      },
+      { 
+        "component": "select",
+        "name": "linkType",
+        "label": "Type",
+        "options": [
+          {
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "primary",
+            "value": "primary"
+          },
+          {
+            "name": "secondary",
+            "value": "secondary"
           }
-        }
+        ]
       }
-    }
+    ]
   }
 ]
