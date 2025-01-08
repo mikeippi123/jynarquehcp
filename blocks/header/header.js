@@ -211,35 +211,35 @@ export default async function decorate(block) {
   const paragraph = document.createElement('p');
   prescribingBlock.append(paragraph);
 
-  const paragraphLink = document.createElement('a');
-  paragraphLink.href = 'https://www.otsuka-us.com/media/static/ABILIFY-MYCITE-PI.pdf?_ga=2.173395299.1526009820.1611183941-2033576871.1535760228';
-  paragraphLink.target = '_blank';
-  paragraphLink.title = 'Prescribing Information';
-  paragraphLink.innerHTML = 'US Full Prescribing Information, <span>including</span> <strong style="font-weight: 800;">Boxed Warning</strong>';
-  paragraph.append(paragraphLink);
+  // const paragraphLink = document.createElement('a');
+  // paragraphLink.href = 'https://www.otsuka-us.com/media/static/ABILIFY-MYCITE-PI.pdf?_ga=2.173395299.1526009820.1611183941-2033576871.1535760228';
+  // paragraphLink.target = '_blank';
+  // paragraphLink.title = 'Prescribing Information';
+  // paragraphLink.innerHTML = 'US Full Prescribing Information, <span>including</span> <strong style="font-weight: 800;">Boxed Warning</strong>';
+  // paragraph.append(paragraphLink);
   
-  // utility menu
-  const utilityNavigation = document.createElement('nav');
-  utilityNavigation.id = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation';
-  utilityNavigation.role = 'navigation';
-  utilityNavigation.ariaLabel = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation-menu';
-  utilityNavigation.className = 'header-top header-top-right utility-navigation';
+  // // utility menu
+  // const utilityNavigation = document.createElement('nav');
+  // utilityNavigation.id = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation';
+  // utilityNavigation.role = 'navigation';
+  // utilityNavigation.ariaLabel = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation-menu';
+  // utilityNavigation.className = 'header-top header-top-right utility-navigation';
 
-  const ulNavigation = document.createElement('ul');
-  const liPatient = document.createElement('li');
-  const anchorPatient = document.createElement('a');
-  anchorPatient.href = 'https://www.abilifymycite.com/';
-  anchorPatient.target = '_blank';
-  liPatient.append(anchorPatient);
-  const liContactUs = document.createElement('li');
-  const buttonContactus = document.createElement('button');
-  buttonContactus.className = 'contact-modal-trigger';
-  buttonContactus.type = 'button';
-  liContactUs.append(buttonContactus);
-  ulNavigation.append(liContactUs);
-  ulNavigation.append(liPatient);
-  utilityNavigation.append(ulNavigation);
-  regionHeaderTopRight.append(utilityNavigation);
+  // const ulNavigation = document.createElement('ul');
+  // const liPatient = document.createElement('li');
+  // const anchorPatient = document.createElement('a');
+  // anchorPatient.href = 'https://www.abilifymycite.com/';
+  // anchorPatient.target = '_blank';
+  // liPatient.append(anchorPatient);
+  // const liContactUs = document.createElement('li');
+  // const buttonContactus = document.createElement('button');
+  // buttonContactus.className = 'contact-modal-trigger';
+  // buttonContactus.type = 'button';
+  // liContactUs.append(buttonContactus);
+  // ulNavigation.append(liContactUs);
+  // ulNavigation.append(liPatient);
+  // utilityNavigation.append(ulNavigation);
+  // regionHeaderTopRight.append(utilityNavigation);
   
 
   innerHeaderContainer.append(headerTopLeftRow);

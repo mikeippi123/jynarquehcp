@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "teaser",
-      "prefooter"
+      "prefooter",
+      "carousel"
     ]
   },
   {
@@ -47,6 +48,18 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "teaser",
+      "detailed-teaser"
     ]
   }
 ]
