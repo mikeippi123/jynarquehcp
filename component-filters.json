@@ -53,15 +53,10 @@
   {
     "id": "carousel",
     "components": [
-      "slide"
-    ]
-  },
-  {
-    "id": "slide",
-    "components": [
       "text",
       "image",
-      "button"
+      "button",
+      "title"
     ]
   }
 ]
