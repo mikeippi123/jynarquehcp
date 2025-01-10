@@ -367,39 +367,8 @@
     ]
   },
   {
-    "id": "carousel",
+    "id": "slide",
     "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "previcon",
-        "value": "",
-        "label": "Previous Icon"
-      },
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "nexticon",
-        "value": "",
-        "label": "Next Icon"
-      },
-      {
-        "component": "select",
-        "name": "carouselshowtype",
-        "value": "primary",
-        "label": "Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
-      },
       {
         "component": "reference",
         "valueType": "string",
@@ -408,52 +377,11 @@
         "multi": false
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
-      },
-      {
         "component": "richtext",
         "name": "text",
         "value": "",
         "label": "Text",
         "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      },
-      {
-        "component": "text",
-        "name": "linkText",
-        "label": "Text"
-      },
-      {
-        "component": "text",
-        "name": "linkTitle",
-        "label": "Title"
-      },
-      { 
-        "component": "select",
-        "name": "linkType",
-        "label": "Type",
-        "options": [
-          {
-            "name": "default",
-            "value": ""
-          },
-          {
-            "name": "primary",
-            "value": "primary"
-          },
-          {
-            "name": "secondary",
-            "value": "secondary"
-          }
-        ]
       }
     ]
   }
