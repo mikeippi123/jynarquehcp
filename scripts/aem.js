@@ -504,7 +504,7 @@ function decorateSections(main) {
             .filter((size) => size)
             .map((size) => toClassName(size.trim()));
           sizes.forEach((size) => section.classList.add(size));
-        } else if (key === 'backgroundtype') {
+        } else if (key === 'backgroundType') {
           const backgroundTypes = meta.backgroundType
             .split(',')
             .filter((backgroundType) => backgroundType)
