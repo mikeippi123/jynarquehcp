@@ -259,6 +259,10 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+main .section.fullwidth{
+  background: blue;
+}
+
 /*Hero section */
 .section.hero-container {
     height: 379.328px;
