@@ -29,36 +29,36 @@
               "value": "highlight"
             }
           ]
-        }
-      ]
-    },
-    {
-      "component": "multiselect",
-      "name": "size",
-      "label": "Size",
-      "options": [
-        {
-          "name": "FullWidth",
-          "value": "fullwidth"
-        }
-      ]
-    },
-    {
-      "component": "select",
-      "name": "backgroundType",
-      "label": "Background Color",
-      "options": [
-        {
-          "name": "default",
-          "value": ""
         },
         {
-          "name": "Grey",
-          "value": "grey"
+          "component": "multiselect",
+          "name": "size",
+          "label": "Size",
+          "options": [
+            {
+              "name": "FullWidth",
+              "value": "fullwidth"
+            }
+          ]
         },
         {
-          "name": "Green",
-          "value": "green"
+          "component": "select",
+          "name": "backgroundType",
+          "label": "Background Color",
+          "options": [
+            {
+              "name": "default",
+              "value": ""
+            },
+            {
+              "name": "Grey",
+              "value": "grey"
+            },
+            {
+              "name": "Green",
+              "value": "green"
+            }
+          ]
         }
       ]
     }

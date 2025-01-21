@@ -260,16 +260,19 @@ main .section.highlight {
 }
 
 main .section.fullwidth{
-
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width */
 }
 
-main .section [data-backgroundtype="grey"] {
+[data-backgroundtype="grey"] {
   background: grey;
 }
-
-main .section.green{
-  background: Green;
+[data-backgroundtype="green"] {
+  background: green;
 }
+
 
 /*Hero section */
 .section.hero-container {
