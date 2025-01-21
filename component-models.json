@@ -121,20 +121,21 @@
         ]
       },
       {
-        "component": "collapsible",
-        "name": "backgroundSettings",
-        "label": "Background Settings",
-        "fields": [
+        "component": "select",
+        "name": "backgroundType",
+        "label": "Background Color",
+        "options": [
           {
-            "component": "select",
-            "name": "backgroundType",
-            "label": "Background Color",
-            "options": [
-              {
-                "name": "Gray",
-                "value": "gray"
-              }
-            ]
+            "name": "default",
+            "value": ""
+          },
+          {
+            "name": "Grey",
+            "value": "grey"
+          },
+          {
+            "name": "Green",
+            "value": "green"
           }
         ]
       }
