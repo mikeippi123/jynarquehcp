@@ -510,6 +510,9 @@ function decorateSections(main) {
             .filter((backgroundType) => backgroundType)
             .map((backgroundType) => toClassName(backgroundType.trim()));
           backgroundTypes.forEach((backgroundType) => section.classList.add(backgroundType));
+        } else if(field.component === 'collapsible') {
+
+          processFields(field.fields);
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }
