@@ -280,10 +280,6 @@ main .section.highlight {
   width: 483px;
 }
 /* Prefooter section */
-.section:nth-child(5) > div{
-  width: 1289px;
-  height: 170.094px;
-}
 
 .section:nth-child(5) > div > h3 {
   text-align: center;

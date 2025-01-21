@@ -159,96 +159,68 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
-  // top header section
-  const topHeaderSection = document.createElement('section');
-  topHeaderSection.className = 'top-header-section';
+// top header section
+const topHeaderSection = document.createElement('section');
+topHeaderSection.className = 'top-header-section';
 
-  // inner header section
-  const innerHeaderContainer = document.createElement('div');
-  innerHeaderContainer.className = 'inner-header-container';
+// inner header section
+const innerHeaderContainer = document.createElement('div');
+innerHeaderContainer.className = 'inner-header-container';
 
-  // header top left row
-  const headerTopLeftRow = document.createElement('div');
-  headerTopLeftRow.className = 'header-top-left-row';
+// header top left row
+const headerTopLeftRow = document.createElement('div');
+headerTopLeftRow.className = 'header-top-left-row';
 
-  // region header top left
-  const regionHeaderTopLeft = document.createElement('div');
-  regionHeaderTopLeft.className = 'region region-header-top-left';
-  headerTopLeftRow.append(regionHeaderTopLeft);
+// region header top left
+const regionHeaderTopLeft = document.createElement('div');
+regionHeaderTopLeft.className = 'region region-header-top-left';
+headerTopLeftRow.append(regionHeaderTopLeft);
 
-  // block-forprofessionals
-  const blockForProfessionals = document.createElement('div');
-  blockForProfessionals.className = 'block block-block-content block-block-content3b9622e3-b2c5-49e2-9ad6-61b149181646';
-  blockForProfessionals.id = 'block-forprofessionals';
-  regionHeaderTopLeft.append(blockForProfessionals);
+// block-forprofessionals
+const blockForProfessionals = document.createElement('div');
+blockForProfessionals.className = 'block block-block-content block-block-content3b9622e3-b2c5-49e2-9ad6-61b149181646';
+blockForProfessionals.id = 'block-forprofessionals';
+regionHeaderTopLeft.append(blockForProfessionals);
 
-  // content block
-  const professionalBlock = document.createElement('div');
-  professionalBlock.className = 'content';
-  professionalBlock.innerHTML = 'This site is intended for US healthcare professionals only.';
-  blockForProfessionals.append(professionalBlock);
+// content block
+const professionalBlock = document.createElement('div');
+professionalBlock.className = 'content';
+professionalBlock.innerHTML = ' ';
+blockForProfessionals.append(professionalBlock);
 
-  // header top right row
-  const headerTopRightRow = document.createElement('div');
-  headerTopRightRow.className = 'header-top-right-row';
+// header top right row
+const headerTopRightRow = document.createElement('div');
+headerTopRightRow.className = 'header-top-right-row';
 
-  // region header top right
-  const regionHeaderTopRight = document.createElement('div');
-  regionHeaderTopRight.className = 'region region-header-top-right';
-  headerTopRightRow.append(regionHeaderTopRight);
+// region header top right
+const regionHeaderTopRight = document.createElement('div');
+regionHeaderTopRight.className = 'region region-header-top-right';
+headerTopRightRow.append(regionHeaderTopRight);
 
-  // prescribinginfo
-  const prescribinginfo = document.createElement('div');
-  prescribinginfo.id = 'block-new-otsuka-abilifymycite-hcp-prescribinginfo';
-  prescribinginfo.className = 'header-top header-top-left prescribing-info block block-block-content block-block-contentf3e8c581-3fa1-4b97-b769-cea9d477c953';
-  regionHeaderTopRight.append(prescribinginfo);
+// prescribinginfo
+const prescribinginfo = document.createElement('div');
+prescribinginfo.id = 'block-new-otsuka-abilifymycite-hcp-prescribinginfo';
+prescribinginfo.className = 'header-top header-top-left prescribing-info block block-block-content block-block-contentf3e8c581-3fa1-4b97-b769-cea9d477c953';
+regionHeaderTopRight.append(prescribinginfo);
 
-  // prescribing content block
-  const prescribingBlock = document.createElement('div');
-  prescribingBlock.className = 'content';
-  prescribinginfo.append(prescribingBlock);
-  
-  const paragraph = document.createElement('p');
-  prescribingBlock.append(paragraph);
+// prescribing content block
+const prescribingBlock = document.createElement('div');
+prescribingBlock.className = 'content';
+prescribingBlock.innerHTML = 'THIS SITE IS INTENDED FOR US HEALTHCARE PROFESSIONALS';
+prescribinginfo.append(prescribingBlock);
 
-  // const paragraphLink = document.createElement('a');
-  // paragraphLink.href = 'https://www.otsuka-us.com/media/static/ABILIFY-MYCITE-PI.pdf?_ga=2.173395299.1526009820.1611183941-2033576871.1535760228';
-  // paragraphLink.target = '_blank';
-  // paragraphLink.title = 'Prescribing Information';
-  // paragraphLink.innerHTML = 'US Full Prescribing Information, <span>including</span> <strong style="font-weight: 800;">Boxed Warning</strong>';
-  // paragraph.append(paragraphLink);
-  
-  // // utility menu
-  // const utilityNavigation = document.createElement('nav');
-  // utilityNavigation.id = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation';
-  // utilityNavigation.role = 'navigation';
-  // utilityNavigation.ariaLabel = 'block-new-otsuka-abilifymycite-hcp-utilitynavigation-menu';
-  // utilityNavigation.className = 'header-top header-top-right utility-navigation';
+const paragraph = document.createElement('p');
+prescribingBlock.append(paragraph);
 
-  // const ulNavigation = document.createElement('ul');
-  // const liPatient = document.createElement('li');
-  // const anchorPatient = document.createElement('a');
-  // anchorPatient.href = 'https://www.abilifymycite.com/';
-  // anchorPatient.target = '_blank';
-  // liPatient.append(anchorPatient);
-  // const liContactUs = document.createElement('li');
-  // const buttonContactus = document.createElement('button');
-  // buttonContactus.className = 'contact-modal-trigger';
-  // buttonContactus.type = 'button';
-  // liContactUs.append(buttonContactus);
-  // ulNavigation.append(liContactUs);
-  // ulNavigation.append(liPatient);
-  // utilityNavigation.append(ulNavigation);
-  // regionHeaderTopRight.append(utilityNavigation);
-  
 
-  innerHeaderContainer.append(headerTopLeftRow);
-  innerHeaderContainer.append(headerTopRightRow);
-  topHeaderSection.append(innerHeaderContainer);
 
-  const navWrapper = document.createElement('div');
-  navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
-  block.append(topHeaderSection)
-  block.append(navWrapper);
+innerHeaderContainer.append(headerTopLeftRow);
+innerHeaderContainer.append(headerTopRightRow);
+topHeaderSection.append(innerHeaderContainer);
+
+const navWrapper = document.createElement('div');
+navWrapper.className = 'nav-wrapper';
+navWrapper.append(nav);
+block.append(topHeaderSection)
+block.append(navWrapper);
 }

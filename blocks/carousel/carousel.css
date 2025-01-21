@@ -1,5 +1,8 @@
 main .carousel-container {
-    padding: 0;
+    display: flex;
+    width: 1366px;
+    flex-direction: column;
+    align-items: flex-start;
   }
   
   main .carousel {
@@ -39,11 +42,13 @@ main .carousel-container {
   }
   
   main .carousel div.carousel-text {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    min-height: 188px;
-    padding: 0 28px;
+    display: flex;
+    padding: 214px 120px 20px 120px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    color: white;
   }
   
   main .carousel div.carousel-text p {
@@ -92,3 +97,5 @@ main .carousel-container {
   main .carousel-wrapper > :last-child button.selected {
     background-color: var(--link-color);
   }
+
+  
