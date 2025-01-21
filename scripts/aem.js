@@ -504,6 +504,12 @@ function decorateSections(main) {
             .filter((size) => size)
             .map((size) => toClassName(size.trim()));
           sizes.forEach((size) => section.classList.add(size));
+        } else if (key === 'backgroundtype') {
+          const backgroundTypes = meta.backgroundType
+            .split(',')
+            .filter((backgroundType) => backgroundType)
+            .map((backgroundType) => toClassName(backgroundType.trim()));
+          backgroundTypes.forEach((backgroundType) => section.classList.add(backgroundType));
         } else {
           section.dataset[toCamelCase(key)] = meta[key];
         }

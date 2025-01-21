@@ -263,6 +263,14 @@ main .section.fullwidth{
   background: blue;
 }
 
+main .section.grey{
+  background: grey;
+}
+
+main .section.green{
+  background: Green;
+}
+
 /*Hero section */
 .section.hero-container {
     height: 379.328px;
