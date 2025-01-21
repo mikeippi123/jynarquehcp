@@ -260,10 +260,10 @@ main .section.highlight {
 }
 
 main .section.fullwidth{
-  
+
 }
 
-main .section.grey{
+main .section [data-backgroundtype="grey"] {
   background: grey;
 }
 
