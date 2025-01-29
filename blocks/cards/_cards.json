@@ -6,25 +6,10 @@
       "plugins": {
         "xwalk": {
           "page": {
-            "resourceType": "core/franklin/components/block/v1/block",
+            "resourceType": "core/franklin/components/cards/v1/cards",
             "template": {
-              "name": "Cards",
-              "filter": "cards"
-            }
-          }
-        }
-      }
-    },
-    {
-      "title": "Card",
-      "id": "card",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block/item",
-            "template": {
-              "name": "Card",
-              "model": "card"
+              "cards": "2",
+              "row": "1"
             }
           }
         }
@@ -33,21 +18,21 @@
   ],
   "models": [
     {
-      "id": "card",
+      "id": "cards",
       "fields": [
         {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "multi": false
+          "component": "text",
+          "valueType": "number",
+          "name": "cards",
+          "value": "",
+          "label": "Cards"
         },
         {
-          "component": "richtext",
-          "name": "text",
+          "component": "text",
+          "valueType": "number",
+          "name": "rows",
           "value": "",
-          "label": "Text",
-          "valueType": "string"
+          "label": "Rows"
         }
       ]
     }
@@ -57,6 +42,15 @@
       "id": "cards",
       "components": [
         "card"
+      ]
+    },
+    {
+      "id": "card",
+      "components": [
+        "text",
+        "image",
+        "button",
+        "title"
       ]
     }
   ]

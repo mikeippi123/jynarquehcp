@@ -32,7 +32,8 @@
     "components": [
       "text",
       "image",
-      "button"
+      "button",
+      "title"
     ]
   },
   {
