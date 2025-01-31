@@ -195,25 +195,6 @@
     ]
   },
   {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "cards",
-        "value": "",
-        "label": "Cards"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "rows",
-        "value": "",
-        "label": "Rows"
-      }
-    ]
-  },
-  {
     "id": "columns",
     "fields": [
       {
